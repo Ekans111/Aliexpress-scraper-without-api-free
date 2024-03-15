@@ -30,7 +30,8 @@ This project is a web scraper built using Selenium to extract data from AliExpre
    Only Run the script to start scraping AliExpress data.<br>
    `py main.py`
 
-3. Enter the _`NG` words_ (it means the item that includs one of the `NG` word in its `name` you don't want to scrap.)
+3. Enter the _`NG` words_ divided by `,`  
+   (it means the item that includs one of the `NG` word in its `name` you don't want to scrap.)
 
 4. Click `開始` button.
 
