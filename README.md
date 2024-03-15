@@ -8,6 +8,10 @@
 
 This project is a web scraper built using Selenium to extract data from AliExpress website.
 
+### Possible page to scrap
+
+#### **`Product page`**, **`Store page`**
+
 ## Prerequisites
 
 - Python 3.10.9
