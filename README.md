@@ -1,77 +1,53 @@
-# ![Aliexpress Scraping](https://github.com/Ekans111/Aliexpress-Scraping/blob/master/img/interface.jpg?raw=true)
+<p align="center">
+  <img src="https://github.com/Ekans111/Aliexpress-Scraping/blob/master/img/interface.jpg?raw=true" alt="animated" />
+</p>
 
 # Aliexpress-Scraping
 
-<table>
-<tr>
-<td>
-  A webapp using Quandl API to display history of stock growth in a given period of time. It helps predict the growth of stocks from the  charts of stock performace in any period of time. It helps to judge stocks, with the principle of momentum investing, which returns 1% per month on average.
-</td>
-</tr>
-</table>
+## Description
 
-## Demo
+This project is a web scraper built using Selenium to extract data from AliExpress website.
 
-Here is a working live demo : https://iharsh234.github.io/WebApp/
+## Prerequisites
 
-## Site
+- Python 3.10.9
+- Selenium
+- Chrome WebDriver
 
-### Landing Page
+## Installation
 
-Currently it is working on all NSE (India) Stocks, BSE (India) Stocks Symbol will be added soon.
+1. Clone this repository.
+2. Install the required dependencies by running:
 
-![](https://iharsh234.github.io/WebApp/images/demo/web_app_face.JPG)
+## Usage
 
-### Query Filled Form
+1. Enter the urls you want to scrap scrape in the `URL.csv` file.
+   `https://ja.aliexpress.com/item/33060691049.html?spm=a2g0o.best.moretolove.17.440b1fd3hyIIjK&gatewayAdapt=glo2jpn`
 
-![](https://iharsh234.github.io/WebApp/images/demo/demo_query.JPG)
+   `https://ja.aliexpress.com/item/4000531935985.html?spm=a2g0o.best.moretolove.11.440b1fd3hyIIjK&gatewayAdapt=glo2jpn`
 
-## Mobile support
+2. Run the script.
+   Only Run the script to start scraping AliExpress data.<br>
+   `py main.py`
 
-The WebApp is compatible with devices of all sizes and all OS's, and consistent improvements are being made.
+3. Enter the _`NG` words_ (it means the item that includs one of the `NG` word in its `name` you don't want to scrap.)
 
-![](https://iharsh234.github.io/WebApp/images/demo/mobile.png)
+4. Click `開始` button.
 
-## [Usage](https://iharsh234.github.io/WebApp/)
+5. Wait until message the process is done is displayed and click `終了` button.
 
-### Development
+6. Find the result from `登録.csv`.
 
-Want to contribute? Great!
+   Images can be found in `result` folder.
 
-To fix a bug or enhance an existing module, follow these steps:
+## Disclaimer
 
-- Fork the repo
-- Create a new branch (`git checkout -b improve-feature`)
-- Make the appropriate changes in the files
-- Add changes to reflect the changes made
-- Commit your changes (`git commit -am 'Improve feature'`)
-- Push to the branch (`git push origin improve-feature`)
-- Create a Pull Request
+Please make sure to use this scraper responsibly and respect the website's terms of service.
 
-### Bug / Feature Request
+## Author
 
-If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/iharsh234/WebApp/issues/new) by including your search query and the expected result.
+Ekans111
 
-If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/iharsh234/WebApp/issues/new). Please include sample queries and their corresponding results.
+## License
 
-## Built with
-
-- [jQuery - Ajax](http://www.w3schools.com/jquery/jquery_ref_ajax.asp) - jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.
-- [Google Chart API](https://developers.google.com/chart/interactive/docs/quick_start) - Free , Rich Gallery , Customizable and Cross-browser compatible.
-- [Bootstrap](http://getbootstrap.com/) - Extensive list of components and Bundled Javascript plugins.
-
-## To-do
-
-- Add BSE (India) Symbol to the current App.
-- Decide comparison models of Stocks. (suggestions are most welcome).
-- Another WebApp, capable of comparing at least 10 stocks.
-
-## Team
-
-| [![Harsh Vijay](https://avatars1.githubusercontent.com/u/12688534?v=3&s=144)](https://github.com/iharsh234) | [![Quandl.com](https://github.com/iharsh234/WebApp/blob/master/images/quandl.jpg)](https://www.quandl.com/) |
-| ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| [Harsh Vijay ](https://github.com/iharsh234)                                                                | [Quandl](https://www.quandl.com)                                                                            |
-
-## [License](https://github.com/iharsh234/WebApp/blob/master/LICENSE.md)
-
-MIT © [Harsh Vijay ](https://github.com/iharsh234)
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
