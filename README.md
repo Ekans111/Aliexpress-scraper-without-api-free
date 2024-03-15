@@ -26,6 +26,7 @@ This project is a web scraper built using Selenium to extract data from AliExpre
 ## Usage
 
 1. Enter the urls you want to scrap scrape in the `URL.csv` file.
+
    `https://ja.aliexpress.com/item/33060691049.html?spm=a2g0o.best.moretolove.17.440b1fd3hyIIjK&gatewayAdapt=glo2jpn`
 
    `https://ja.aliexpress.com/item/4000531935985.html?spm=a2g0o.best.moretolove.11.440b1fd3hyIIjK&gatewayAdapt=glo2jpn`
