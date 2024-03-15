@@ -1,4 +1,4 @@
-# ![Aliexpress Scraping](https://Ekans111.github.io/Aliexpress-Scraping/img/interface.jpg)
+# ![Aliexpress Scraping](https://github.com/Ekans111/Aliexpress-Scraping/blob/master/img/interface.jpg?raw=true)
 
 # Aliexpress-Scraping
 
