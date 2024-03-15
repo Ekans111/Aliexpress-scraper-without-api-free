@@ -29,7 +29,7 @@ This project is a web scraper built using Selenium to extract data from AliExpre
 
    `https://ja.aliexpress.com/item/33060691049.html?spm=a2g0o.best.moretolove.17.440b1fd3hyIIjK&gatewayAdapt=glo2jpn`
 
-   `https://ja.aliexpress.com/item/4000531935985.html?spm=a2g0o.best.moretolove.11.440b1fd3hyIIjK&gatewayAdapt=glo2jpn`
+   `https://ja.aliexpress.com/store/4997284/pages/all-items.html?sortType=bestmatch_sort&shop_sortType=bestmatch_sort`
 
 2. Run the script.
    Only Run the script to start scraping AliExpress data.<br>
