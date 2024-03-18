@@ -56,11 +56,14 @@ def main(id):
       
       price_elements = driver.find_elements(By.CSS_SELECTOR, '[data-sku-col]')
       max_price = 0
+      size_list = []
       for element in price_elements:
+        if element.text != "":
+          size_list.append(element.text)
         click_function(driver, element)
         pre_price = driver.find_element(By.CSS_SELECTOR, '[data-pl="product-price"]').text
         pre_price_without_comma = pre_price.replace(',', '')
-        pre_price_int = findall(r'[A-Z]{3}(\d+)', pre_price_without_comma)
+        pre_price_int = findall(r'(\d+)円', pre_price_without_comma)
         if len(pre_price_int) == 0:
           continue
         else:
@@ -83,11 +86,18 @@ def main(id):
       except Exception as e:
         print("Error: ", e)
         pass
+      sleep(0.2)
       description_keys = description_element.find_elements(By.XPATH, "//div[@id='nav-specification']//li//span")
 
       description_keys_text = []
       for key in description_keys: 
         description_keys_text.append(key.text)
+      
+      if len(size_list) > 0:
+        description_keys_text.append("Size")
+        my_string = '/'.join(size_list)
+        print("Size: ", my_string)
+        description_keys_text.append(my_string)
 
       paired_description = [[description_keys_text[i], description_keys_text[i+1]] for i in range(0, len(description_keys_text), 2)]
       print("Description Keys: ", paired_description)
@@ -99,4 +109,4 @@ def main(id):
     return response
 
 # if __name__ == '__main__':
-#     print(run("1005006367265049"))
+#     print(main("1005006060893788"))
