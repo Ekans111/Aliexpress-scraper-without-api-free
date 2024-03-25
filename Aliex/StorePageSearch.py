@@ -1,5 +1,3 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from re import search
 from time import sleep
@@ -11,15 +9,13 @@ def click_function(driver, target, SELECTOR):
     click_element.click()
     sleep(0.6)
 
-def run(id):
+def run(id, driver):
     url = f'https://ja.aliexpress.com/store/{id}/pages/all-items.html?sortType=bestmatch_sort&shop_sortType=bestmatch_sort'
-    chrome_options = Options()
-    chrome_options.add_argument("--start-maximized")
+    
     try:
-        driver = webdriver.Chrome(options=chrome_options)
         driver.get(url)
 
-        sleep(1)
+        sleep(20)
         page = driver.find_element(By.CSS_SELECTOR, '[totalpage]')
         total_pages = int(page.get_attribute('totalpage'))
         print(f"Total pages: {total_pages} {page.get_attribute('totalpage')}")
@@ -46,11 +42,10 @@ def run(id):
                 continue
         print(ids)
 
-        driver.quit()
     except Exception as e:
         print("Error: ", e)
         return "error"
     return ids
 
-def main(id):
-    return run(id)
+def main(id, driver):
+    return run(id, driver)
