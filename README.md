@@ -40,9 +40,12 @@ This project is a web scraper built using Selenium to extract data from AliExpre
 
 4. Click `開始` button.
 
-5. Wait until message the process is done is displayed and click `終了` button.
+5. When chrome browser is opened and delayed, you should change the currency to "JPY".
+   `It was designed only for japanese.`
 
-6. Find the result from `登録.csv`.
+6. Wait until message the process is done is displayed and click `終了` button.
+
+7. Find the result from `登録.csv`.
 
    Images can be found in `result` folder.
 
