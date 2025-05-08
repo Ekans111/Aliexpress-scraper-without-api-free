@@ -55,7 +55,7 @@ Please make sure to use this scraper responsibly and respect the website's terms
 
 ## Author
 
-[Ekans111](https://t.me/hiroyama_92)
+[Ekans122](https://t.me/hiroyama_92)
 
 ## License
 
